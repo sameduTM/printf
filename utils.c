@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strlen - find the length of a string
+ * _strlen - finds the length of a string
  * @str: pointer to string
  *
  * Return: Length

@@ -25,6 +25,7 @@ int format_checker(const char *str, va_list args)
 			continue;
 		}
 		_putchar(str[i]);
+		count = count + 1;
 	}
 	return (count);
 }
