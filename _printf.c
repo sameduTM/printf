@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 	count = _strlen(format);
 	if (count <= 0)
 		return (0);
-	
+
 	va_start(args, format);
 	count = format_checker(format, args);
 

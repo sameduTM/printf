@@ -13,5 +13,5 @@ int print_c(va_list args)
 
 	_putchar(a);
 
-	return(1);
+	return (1);
 }

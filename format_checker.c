@@ -3,7 +3,7 @@
 /**
  * format_checker - Format controller
  * @str: String format
- * @list: List of arguments
+ * @args: List of arguments
  *
  * Return: Total size of arguments with the total size of the base string
  **/
@@ -31,7 +31,7 @@ int format_checker(const char *str, va_list args)
 /**
  * xter_checker - Controller for percent format
  * @str: String format
- * @list: List of arguments
+ * @args: List of arguments
  * @i: Iterator
  *
  * Return: Size of the numbers of elements printed

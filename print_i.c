@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * print_integer - Print a number in base 10
- * @list: Number to print in base 10
+ * print_i - Print a number in base 10
+ * @args: Number to print in base 10
  *
- * Return: Length of th numbers in decimal
+ * Return: Length of the numbers in decimal
  */
 int print_i(va_list args)
 {
