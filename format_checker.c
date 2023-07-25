@@ -39,7 +39,7 @@ int format_checker(const char *str, va_list args)
 
 int xter_checker(const char *str, va_list args, int *i)
 {
-	int count, j, _format;
+	int count, j, n_format;
 	format formats[] = {
 		{'s', print_s}, {'c', print_c},
 		{'d', print_i}, {'i', print_i}
@@ -48,13 +48,15 @@ int xter_checker(const char *str, va_list args, int *i)
 
 	if (str[*i] == '\0')
 		return (-1);
-	if (str[*i] == '\0')
+
+	if (str[*i] == '%')
 	{
 		_putchar('%');
 		return (1);
 	}
-	_format = sizeof(formats) / sizeof(formats[0]);
-	for (count = j = 0; j < _format; j++)
+
+	n_format = sizeof(formats) / sizeof(formats[0]);
+	for (count = j = 0; j < n_format; j++)
 	{
 		if (str[*i] == formats[j].type)
 		{
